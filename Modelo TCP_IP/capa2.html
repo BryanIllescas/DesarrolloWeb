@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capa2</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="#inicio">Informacion de capa</a>
+                <a href="#nosotros">Sobre nosotros</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero2">
+        <h1>EL MODELO TCP/IP <br>Capa 2<br>Internet</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Capa de Internet <samp class="color-acento">(Internet Layer)</samp></h2>
+            <h3>¿Qué es?</h3>
+            <p>
+                La capa de Internet se ocupa del enrutamiento y direccionamiento de los paquetes de datos a través de redes. 
+                Aquí es donde se encuentra el Protocolo de Internet (IP) para asignar direcciones IP a los dispositivos 
+                y asegurar que los paquetes lleguen a la red de destino correcta. 
+            </p>
+            <h3>¿Cómo funciona y cuál es su función?</h3>
+            <p>
+                La función principal de la capa de Internet es garantizar que los datos se entreguen a la red de destino correcta. 
+                Toma los paquetes de datos de la capa de Transporte y los divide en fragmentos más pequeños si es necesario. 
+                Luego, agrega encabezados que contienen las direcciones IP del host de origen y de destino, y utiliza tablas 
+                de enrutamiento para determinar el camino óptimo hacia el destino.
+            </p>
+            <h3>¿Cuál es su importancia?</h3>
+            <p>
+                La capa de Internet es esencial para el funcionamiento de Internet y otras redes interconectadas. 
+                Permite la interconexión de redes y asegura que los datos se enruten correctamente a través de múltiples dispositivos y redes.
+            </p>
+            <h3>Ejemplo</h3>
+            <p>
+                Un ejemplo es el Protocolo de Internet (IPv4 o IPv6), que asigna direcciones IP únicas a dispositivos en la red. 
+                Cuando accedes a un sitio web, la capa de Internet se encarga de direccionar tu solicitud al servidor 
+                correspondiente utilizando la dirección IP del servidor.
+            </p>
+            <p><h3>Que protocolos utiliza esta capa?</h3>
+                <div class="grid-container2" style="margin: 20px;">
+                    <div class="grid-item2"><b> IP (Internet Protocol): </b> Es el principal protocolo utilizado en Internet y proporciona el direccionamiento y enrutamiento necesario para de la red. </li>
+                      <a href="ip.html">
+                       <img src="imagenes/IP.jpg" alt="Botón HTTP" class=" http";>
+                       </a></div>
+                    <div class="grid-item2"><b>ICMP (Internet Control Message Protocol): </b> Se utiliza para comunicar mensajes de estado, problemas y errores entre dispositivos en la red.</li>
+                      <a href="icmp.html">
+                       <img src="imagenes/ICMP.jpg" alt="Botón HTTP" class=" http" ;>
+                       </a></div>
+                    <div class="grid-item2"><b>IGMP (Internet Group Management Protocol): </b> IGMP es un protocolo utilizado en redes IP que admiten la multidifusión (multicast).</li>
+                      <a href="igmp.html">
+                       <img src="imagenes/IGMP.jpg" alt="Botón HTTP" class=" http" ;>
+                       </a></div>
+                    <div class="grid-item2" ><b>ARP (Address Resolution Protocol): </b> ARP es un protocolo de comunicación utilizado para asociar direcciones IP (lógicas) con direcciones MAC (físicas) en una red local.</li>
+                      <a href="arp2.html">
+                       <img src="imagenes/ARP.jpg" alt="Botón HTTP" class=" http" ;>
+                       </a> </div>
+                    
+                  </div>
+                </div>
+            </p>
+        </div>
+     </section>
+
+     <section id="nosotros">
+        <div class="container">
+            <h3>Somos el Grupo número 4 <br>del curso Redes 1</h3>
+            <li>Bryan Alexander ILlescas Monroy <br>9989-20-273</li>
+            <li>Byron Iván Barrientos Hernández <br>9989-20-3407</li></div>
+     </section>
+
+     <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

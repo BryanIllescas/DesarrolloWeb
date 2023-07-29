@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIP</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa1.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_slip">
+        <h1>Capa 1 <br>Protocolo SLIP</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">SLIP</samp></h2>
+            <p>
+                SLIP (Serial Line Internet Protocol) es un protocolo de comunicación de la capa de enlace de datos utilizado para transmitir paquetes de datos a través de conexiones seriales, como líneas telefónicas o puertos serie.
+                Fue uno de los primeros protocolos utilizados para conectar computadoras a Internet y proporcionó una forma sencilla de enviar paquetes IP a través de enlaces seriales.
+                SLIP opera en el nivel de enlace del modelo TCP/IP y es compatible con varias topologías de red.
+              </p>
+              <p>
+                SLIP funciona encapsulando paquetes IP en tramas seriales y enviándolas uno tras otro a través de la conexión serial.
+                Cada trama SLIP comienza y termina con un carácter especial, que indica el inicio y fin de la trama.
+                Aunque SLIP fue ampliamente utilizado en el pasado, carece de mecanismos avanzados de detección de errores y corrección, lo que lo hace menos confiable que otros protocolos más modernos, como PPP (Protocolo Punto a Punto).
+              </p>
+              
+              <h3>Funcionamiento de SLIP</h3>
+              <p>
+                Antes de enviar paquetes IP, un dispositivo debe establecer una conexión SLIP con otro dispositivo en el extremo receptor.
+                Para ello, ambas partes deben acordar previamente el uso de SLIP como protocolo de enlace de datos.
+                Una vez establecida la conexión SLIP, los dispositivos pueden comenzar a enviar paquetes IP encapsulados en tramas SLIP a través de la conexión serial.
+                Cada trama SLIP puede contener un único paquete IP.
+                Al recibir las tramas, el dispositivo receptor las desencapsulará y procesará los paquetes IP contenidos en ellas.
+              </p>
+              
+              <h3>Limitaciones de SLIP</h3>
+              <p>
+                Aunque SLIP fue ampliamente utilizado en el pasado debido a su simplicidad, tiene varias limitaciones significativas.
+                Una de las principales limitaciones es la falta de mecanismos para detectar y corregir errores en la transmisión.
+                Esto significa que si una trama SLIP se corrompe durante la transmisión, no hay forma de recuperar la información perdida.
+                Además, SLIP no admite la negociación de parámetros de conexión, lo que dificulta la configuración automática de la conexión.
+                Estas limitaciones llevaron al desarrollo de protocolos más avanzados, como PPP, que ofrecen una mayor fiabilidad y funcionalidad.
+              </p>
+            </div>
+
+        <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGMP</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa2.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_igmp">
+        <h1>Capa 2 <br>Protocolo IGMP</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">IGMP</samp></h2>
+            <p>IGMP es un protocolo utilizado en redes IP que admiten la multidifusión (multicast). 
+                Permite a los dispositivos de red, como enrutadores, unirse o abandonar grupos de multidifusión, 
+                lo que les permite recibir tráfico dirigido a una dirección de multidifusión específica.</p>
+                   
+            <h3>Funcionamiento del IGMP</h3>
+            <p>Supongamos que tienes un enrutador en tu red que admite la multidifusión y tienes un servidor 
+                que envía contenido en vivo, como un video de transmisión en directo. Cuando un dispositivo en tu red 
+                quiere ver el video en vivo, envía un mensaje IGMP para unirse al grupo de multidifusión específico 
+                que corresponde al contenido en vivo. El enrutador, al recibir este mensaje IGMP, comenzará a enviar 
+                el tráfico de multidifusión relacionado con el video en vivo solo a los dispositivos que se han unido 
+                al grupo de multidifusión.</p>
+            
+            <h3>Importancia del IGMP</h3>
+            <p>
+                IGMP es crucial para el funcionamiento de redes que utilizan la multidifusión. La multidifusión permite 
+                enviar datos de manera eficiente a múltiples destinos en lugar de enviar una copia individual a cada dispositivo.
+            </p>
+            <h4>Optimización del tráfico</h4>
+            <p>
+                IGMP permite que los dispositivos en una red indiquen su interés en recibir datos de un grupo 
+                de multidifusión específico. Esto reduce el tráfico innecesario en la red, ya que solo los dispositivos 
+                interesados en los datos reciben el tráfico de multidifusión.
+            </p>
+            <h4>Distribución de contenido en tiempo real</h4>
+            <p>
+                IGMP es ampliamente utilizado para la transmisión en vivo, como streaming de video y audio en tiempo real, 
+                donde muchos dispositivos pueden unirse al grupo de multidifusión para recibir el contenido simultáneamente.
+            </p>
+          </div>
+
+        <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

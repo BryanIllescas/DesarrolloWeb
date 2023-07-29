@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARP</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa1.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_arp">
+        <h1>Capa 1 <br>Protocolo ARP</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">ARP</samp></h2>
+            <p>ARP es un protocolo de comunicación utilizado para asociar direcciones IP (lógicas) 
+                con direcciones MAC (físicas) en una red local. Cuando un dispositivo necesita comunicarse 
+                con otro dispositivo en la misma red local, utiliza ARP para encontrar la dirección MAC asociada 
+                con una dirección IP específica.</p>
+                   
+            <h3>Funcionamiento del ARP</h3>
+            <p>
+                Imagina que deseas enviar un archivo a otro dispositivo en tu red local. Antes de enviar los datos, 
+                tu dispositivo primero necesita determinar la dirección MAC del dispositivo de destino. 
+                Utilizará ARP para enviar una solicitud a la red preguntando quién tiene la dirección IP del dispositivo 
+                de destino. El dispositivo de destino responderá con su dirección MAC, y tu dispositivo utilizará 
+                esa información para enviar el archivo a la dirección MAC correcta. Esto permite que los dispositivos 
+                se comuniquen en la red local utilizando direcciones físicas en lugar de direcciones lógicas.
+            </p>
+            
+            <h3>Importancia del ARP</h3>
+            <p>
+                ARP es esencial para la comunicación en una red local. Su importancia radica en la resolución 
+                de direcciones IP a direcciones físicas (MAC) necesarias para la entrega de datos dentro de una red local.
+            </p>
+    
+            <h4>Resolución de direcciones IP a MAC</h4>
+            <p>
+                ARP permite a los dispositivos de una red local encontrar la dirección física (MAC) 
+                asociada con una dirección IP específica. Sin ARP, los dispositivos no sabrían cómo enviar los datos 
+                a otros dispositivos en la misma red local.
+            </p>
+    
+            <h4>Optimización del tráfico local</h4>
+            <p>
+                Al conocer las direcciones MAC de los dispositivos vecinos, los dispositivos pueden enviar datos 
+                directamente a su destino, evitando tráfico innecesario en la red local y mejorando la eficiencia 
+                de la comunicación.
+            </p>
+          </div>
+
+        <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

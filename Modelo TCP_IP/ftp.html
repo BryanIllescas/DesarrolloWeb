@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTP</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa4.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_ftp">
+        <h1>Capa 3 <br>Protocolo FTP</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">FTP</samp></h2>
+            <p>
+                FTP es el Protocolo de Transferencia de Archivos, y es un protocolo utilizado para la transferencia de archivos entre un cliente y un servidor en una red.
+                Permite que los usuarios carguen y descarguen archivos desde y hacia un servidor FTP a través de una conexión de red.
+              </p>
+              <p>
+                FTP opera en dos modos principales: el modo activo y el modo pasivo. En el modo activo, el cliente establece una conexión de datos con el servidor para la transferencia de archivos, mientras que en el modo pasivo, el servidor abre un puerto de datos para que el cliente pueda conectarse y realizar la transferencia.
+              </p>
+              <p>
+                FTP utiliza dos canales de comunicación: el canal de control, que se utiliza para enviar comandos y recibir respuestas del servidor, y el canal de datos, que se utiliza para transferir los archivos.
+                Los comandos FTP incluyen acciones como LIST (para listar archivos en el servidor), GET (para descargar un archivo del servidor) y PUT (para cargar un archivo en el servidor).
+              </p>
+              
+              <h3>Funcionamiento de FTP</h3>
+              <p>
+                El funcionamiento de FTP involucra una comunicación cliente-servidor a través de un par de canales de comunicación.
+                El cliente inicia una conexión con el servidor utilizando el canal de control, autentica su identidad y envía comandos al servidor para realizar acciones como listar archivos o transferir datos.
+                Cuando se requiere una transferencia de archivos, se establece una conexión de datos separada a través del canal de datos para llevar a cabo la transferencia.
+                Una vez completada la transferencia, se cierra la conexión de datos y el cliente continúa comunicándose con el servidor a través del canal de control.
+              </p>
+              
+              <h3>Importancia de FTP</h3>
+              <p>
+                FTP es ampliamente utilizado para la transferencia de archivos en una variedad de entornos, como sitios web, servidores de almacenamiento y copias de seguridad de archivos.
+                Permite a los usuarios acceder y compartir archivos de manera eficiente y segura a través de redes, y ha sido una parte integral de Internet y las redes locales durante muchos años.
+              </p>
+            </div>
+
+        <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

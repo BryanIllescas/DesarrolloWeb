@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDP</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa3.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_udp">
+        <h1>Capa 3 <br>Protocolo UDP</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">UDP</samp></h2>
+            <p>
+                UDP (Protocolo de Datagramas de Usuario) es un protocolo de la capa de transporte del modelo TCP/IP.
+                A diferencia de TCP, UDP es un protocolo no orientado a conexión y no garantiza la entrega confiable de datos.
+                Esto significa que UDP envía los datagramas sin verificar si llegan a su destino o si llegan en el orden correcto.
+                UDP es útil en situaciones donde la velocidad es más importante que la confiabilidad, como en transmisiones de audio y video en tiempo real.
+              </p>
+              <p>
+                UDP es más ligero y rápido que TCP debido a que no realiza el establecimiento y cierre de conexión ni el control de congestión.
+                Sin embargo, debido a su naturaleza no confiable, si los datos se pierden o llegan dañados, no hay mecanismos para solicitar su retransmisión.
+                Por lo tanto, si la confiabilidad y el orden son esenciales, se suele preferir TCP en lugar de UDP.
+              </p>
+              
+              <h3>Características de UDP</h3>
+              <p>
+                Algunas de las características clave de UDP incluyen:
+                <ul>
+                  <li>No orientado a conexión: No establece una conexión antes de la transmisión de datos.</li>
+                  <li>No confiable: No garantiza la entrega confiable y ordenada de datos.</li>
+                  <li>Más rápido y ligero que TCP: No realiza el establecimiento y cierre de conexión ni el control de congestión.</li>
+                  <li>Útil en transmisiones en tiempo real: Adecuado para aplicaciones donde la velocidad es más importante que la confiabilidad.</li>
+                </ul>
+              </p>
+            </div>
+
+        <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

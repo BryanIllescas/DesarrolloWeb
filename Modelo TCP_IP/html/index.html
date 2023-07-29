@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modelo TCP/IP</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" href="css/normalize.css"> 
+</head>
+<body>
+  <div class="page-container">
+    <header class="header" id="header">
+      <h1 >Modelo TCP/IP</h1>
+    </header>
+    
+    <!-- Contenedor de Capas -->
+    <div class="container">
+      <div class="button-container"> <!-- Nuevo contenedor para los botones -->
+        <div class="layer" id="layer1" onclick="showLayer(1)">
+          Capa 1: Aplicación
+        </div>
+        <div class="layer" id="layer2" onclick="showLayer(2)">
+          Capa 2: Transporte
+        </div>
+        <!-- Agregar botones para las otras capas -->
+        <div class="layer" id="layer3" onclick="showLayer(3)">
+          Capa 3: Internet
+        </div>
+        <div class="layer" id="layer4" onclick="showLayer(4)">
+          Capa 4: Acceso a la Red
+        </div>
+        <div class="layer" id="layer5" onclick="showLayer(5)">
+          <a href="html/diagrama.html" style="text-decoration:none">Diagrama </a>
+        </div>
+      </div>
+      
+      <!-- Panel -->
+      <div class="info" id="layerInfo">
+        Haz clic en cada capa para obtener más información.
+      </div>
+      
+      <div class="panel-container">
+        <div class="panel" id="panel1">
+          <b> <h3>Información de la Capa 1: Aplicación  </h3> </b>
+          Es la capa que proporciona la interfaz entre las aplicaciones que utilizamos para comunicarnos y la red en la cual se transmiten los mensajes, los protocolos se utilizan para intercambiar los datos entre los programas
+          que se encuentran en el origen y el destino. En esta capa se transfiere archivos por medio de la red,  se comunican y preparan los datos para la transferencia en texto, imagen o video, estos necesitan diversos servicios 
+          para ser procesados, la sintaxis y formato de datos que se transmite, la codificación y conversión de datos para garantizar que los datos del dispositivo de origen se puedan interpretar por medio del dispositivo de destino,
+           la compresión de los datos para que puedan ser descomprimidos en el dispositivo destino, la encriptación de datos para transmitirse y des-encriptarse en el destino. En esta capa existen diversos protocolos para hacer estas 
+           funciones, algunos son:
+          <!-- Contenido de la Capa 1 con diseño de cuadrícula -->
+          <div class="grid-container" style="margin: 20px;">
+            <div class="grid-item"><b> DNS (Domain Name Service): </b> Se utiliza para resolver y traducir los diversos nombres de dominio y sus IPs. </li>
+              <a href="html/dns.html">
+               <img src="imagenes/dns.jpg" alt="Botón HTTP" class=" http";>
+               </a></div>
+            <div class="grid-item"><b>HTTP: Hypertext Transfer Protocol: </b> Se utiliza para transferir archivos que forman paginas web de la world wide web (WWW).</li>
+              <a href="html/http.html">
+               <img src="imagenes/http.jpg" alt="Botón HTTP" class=" http" ;>
+               </a></div>
+            <div class="grid-item"><b>SMTP (Simple MailTransfer Protocol ): </b> Se utiliza para la transferencia de correos electrónicos.</li>
+              <a href="html/smtp.html">
+               <img src="imagenes/smtp.png" alt="Botón HTTP" class=" http" ;>
+               </a></div>
+            <div class="grid-item" ><b>TELNET: </b> Es un protocolo de emulación de terminal, se utiliza para proporcionar acceso remoto a servidores y dispositivos de red como routers.</li>
+              <a href="html/telnet.html">
+               <img src="imagenes/telnet.jpg" alt="Botón HTTP" class=" http" style="height: 50%;">
+               </a> </div>
+            <div class="grid-item"><b>FTP (File Transfer Protocol): </b>  Se utiliza para tranferir archivos entre los sistemas en red.</li>  
+              <a href="html/ftp.html">
+               <img src="imagenes/ftp.png" alt="Botón HTTP" class=" http"; >
+               </a> </div>
+            
+          </div>
+        </div>
+        <div class="panel" id="panel2">
+          <b> <h3>Información de la Capa 2: Transporte </h3> </b>
+          <!-- Contenido de la Capa 2 con diseño de cuadrícula -->
+          Su principal tarea es segmentar los datos y brindar el control necesario para re-ensamblar las partes entre distintos nodos de comunicación, nos permite rastrear la 
+          comunicación individual entre aplicaciones de origen y destino, segmentación de datos y manejo de cada parte en forma segura, re-ensamble en stream de datos de aplicación para la 
+          segmentación de datos por medio del protocolo de control de comunicaciones TCP (Trasmition control protocol).  La capa de transporte TCP/IP garantiza que los paquetes lleguen en
+           secuencia y sin errores, al intercambiar la confirmación de la recepción de los datos y retransmitir los paquetes perdidos. 
+           <p>El  UDP (user datagram protocol)  que también se encuentran en esta capa permite el envió de datagramas a través de la red sin necesidad
+             que se haya establecida antes una conexión debido a que el datagrama incorpora suficiente información de direccionamiento en su cabecera 
+             además tampoco confirmación y control de flujo haciendo que los paquetes puedan adelantarse por lo tanto no se sabe si los paquetes se han 
+             entregado correctamente.</p>
+          <div class="grid-container2" style="margin: 20px;">
+            <div class="grid-item2" ><b> TCP (Trasmition control protocol): </b> El TCP describe los servicios que segmentan o dividen el flujo de datos. 
+               <a href="html/tcp.html">
+                <img src="imagenes/tcp.png" alt="Botón HTTP" class=" http";>
+                </a>
+              </div>
+            <div class="grid-item2"><b> UDP (User Datagram Protocol): </b> Permite el envió de datagramas a través de la red sin necesidad de una conexión.
+              <a href="html/udp.html">
+                <img src="imagenes/udp.png" alt="Botón HTTP" class=" http";>
+                </a>
+               </div>
+        
+          </div>
+        </div>
+        <!-- Agregar paneles para las otras capas -->
+        <div class="panel" id="panel3">
+          <!-- Contenido de la Capa 3 con diseño de cuadrícula -->
+          <div class="grid-container3" style="margin: 20px;">
+            <div class="grid-item3"><b> IP (Internet Protocol): </b> Es el principal protocolo utilizado en Internet y proporciona el direccionamiento y enrutamiento necesario para de la red. </li>
+              <a href="html/ip.html">
+               <img src="imagenes/IP.jpg" alt="Botón HTTP" class=" http";>
+               </a></div>
+            <div class="grid-item3"><b>ICMP (Internet Control Message Protocol): </b> Se utiliza para comunicar mensajes de estado, problemas y errores entre dispositivos en la red.</li>
+              <a href="html/icmp.html">
+               <img src="imagenes/ICMP.jpg" alt="Botón HTTP" class=" http" ;>
+               </a></div>
+            <div class="grid-item3"><b>IGMP (Internet Group Management Protocol): </b> IGMP es un protocolo utilizado en redes IP que admiten la multidifusión (multicast).</li>
+              <a href="html/igmp.html">
+               <img src="imagenes/IGMP.jpg" alt="Botón HTTP" class=" http" ;>
+               </a></div>
+            <div class="grid-item3" ><b>ARP (Address Resolution Protocol): </b> ARP es un protocolo de comunicación utilizado para asociar direcciones IP (lógicas) con direcciones MAC (físicas) en una red local.</li>
+              <a href="html/arp.html">
+               <img src="imagenes/ARP.jpg" alt="Botón HTTP" class=" http" ;>
+               </a> </div>
+            
+          </div>
+        </div>
+        <div class="panel" id="panel4">
+          <!-- Contenido de la Capa 4 con diseño de cuadrícula -->
+          <div class="grid-container">
+            <div class="grid-item">Contenido 1</div>
+            <div class="grid-item">Contenido 2</div>
+            <div class="grid-item">Contenido 3</div>
+            <div class="grid-item">Contenido 4</div>
+            <div class="grid-item">Contenido 5</div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="footer">
+    <p>© 2023 Grupo 4. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

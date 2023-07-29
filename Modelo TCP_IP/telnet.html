@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELNET</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa4.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_telnet">
+        <h1>Capa 3 <br>Protocolo TELNET</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">TELNET</samp></h2>
+            <p>
+                Telnet es un protocolo de red utilizado para acceder y administrar dispositivos remotos.
+                Permite a un usuario conectarse a un servidor o dispositivo remoto y controlarlo como si estuviera interactuando con él directamente.
+                Telnet opera en el nivel de aplicación del modelo TCP/IP y utiliza el puerto 23 para la comunicación.
+              </p>
+              <p>
+                A través de una sesión Telnet, un usuario puede enviar comandos y recibir respuestas del servidor remoto.
+                Esto permite, por ejemplo, acceder a servidores UNIX, routers y otros dispositivos de red para su configuración y administración.
+              </p>
+              
+              <h3>Funcionamiento de Telnet</h3>
+              <p>
+                Telnet utiliza el modelo cliente-servidor, donde el cliente es el que inicia la conexión y el servidor es el que acepta la conexión y responde a las solicitudes del cliente.
+                Una vez que se ha establecido la conexión Telnet, el cliente puede enviar comandos al servidor y recibir los resultados de esos comandos.
+                Esto permite una administración y configuración remota de dispositivos y servidores.
+              </p>
+              
+              <h3>Seguridad y Limitaciones de Telnet</h3>
+              <p>
+                A pesar de su utilidad, Telnet tiene algunas limitaciones importantes en cuanto a seguridad.
+                La información enviada a través de Telnet, incluyendo contraseñas y datos confidenciales, se envía en texto sin cifrar, lo que lo hace vulnerable a la interceptación y lectura por parte de terceros malintencionados.
+                Por esta razón, Telnet se considera inseguro para su uso en redes no confiables, como Internet.
+                En su lugar, se recomienda el uso de protocolos seguros como SSH (Secure Shell) para la administración remota.
+              </p>
+            </div>
+
+        <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

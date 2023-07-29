@@ -1,0 +1,846 @@
+
+/* GLOBALES */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+h4{font-size: 1.6em;}
+p{font-size: 1.25em;}
+li{font-size: 1.25em;}
+
+/* BOTONES */
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: blueviolet;}
+
+/* HEADER */
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 2.7em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+/* HERO */
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/hero1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+/* HERO CAPA 1 Y EXTRAS*/
+
+#hero1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero1 h1{
+    color: white;
+}
+
+#hero_ethernet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/ethernet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_ethernet h1{
+    color: white;
+}
+
+#hero_wifi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/WIFI.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_wifi h1{
+    color: white;
+}
+
+#hero_ppp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/ppp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_ppp h1{
+    color: white;
+}
+
+#hero_hdlc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/hdlc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_hdlc h1{
+    color: white;
+}
+
+#hero_slip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/slip.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_slip h1{
+    color: white;
+}
+
+#hero_arp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/ARP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_arp h1{
+    color: white;
+}
+
+/* HERO CAPA 2 Y EXTRAS*/
+
+#hero2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero2 h1{
+    color: white;
+}
+
+#hero_ip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/IP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_ip h1{
+    color: white;
+}
+
+#hero_icmp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/ICMP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_icmp h1{
+    color: white;
+}
+
+#hero_igmp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/IGMP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_igmp h1{
+    color: white;
+}
+
+
+/* HERO CAPA 3 Y EXTRAS*/
+
+#hero3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero3 h1{
+    color: white;
+}
+
+#hero_tcp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/tcp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_tcp h1{
+    color: white;
+}
+
+#hero_udp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/udp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_udp h1{
+    color: white;
+}
+
+/* HERO CAPA 4 Y EXTRAS*/
+
+#hero4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero4 h1{
+    color: white;
+}
+
+#hero_dns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/dns.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_dns h1{
+    color: white;
+}
+
+#hero_http{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/http.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_http h1{
+    color: white;
+}
+
+#hero_smtp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/smtp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_smtp h1{
+    color: white;
+}
+
+#hero_telnet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/telnet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_telnet h1{
+    color: white;
+}
+
+#hero_ftp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/ftp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_ftp h1{
+    color: white;
+}
+
+
+
+/* INICIO */
+
+#inicio .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/* CAPAS */
+
+#capas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#capas .container{
+    padding: 150px 12px;
+}
+
+#capas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#capas p{
+    display: none;
+}
+
+#capas .capa{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.capa:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa1.jpg");
+}
+
+.capa:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa2.jpg");
+}
+
+.capa:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa3.jpg");
+}
+
+.capa:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa4.jpg");
+}
+
+/* SOBRE NOSOTROS */
+
+#nosotros .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#nosotros li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+}
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+#hero h1{
+    font-size: 5em;
+}
+
+#capas .cap{
+    display: flex;
+    justify-content: center;
+}
+
+#capas p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#capas h2{
+    font-size: 4em;
+}
+
+#capas h3{
+    margin-top: 0;
+}
+
+#capas .capa{
+    padding: 50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.capa:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa1.jpg");
+}
+
+.capa:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa2.jpg");
+}
+
+.capa:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa3.jpg");
+}
+
+.capa:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/capa4.jpg");
+}
+
+#nosotros{
+    background-image: url("../imagenes/logoUMG.webp");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 500px) 120px;
+}
+
+#nosotros .container{
+    text-align: initial;
+}
+
+#nosotros ul{
+    margin-left: 100px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en la parte superior */
+    grid-template-rows: repeat(2, 1fr); /* 2 filas en la parte superior */
+    gap: 10px; /* Espacio entre los elementos de la cuadrícula */
+    
+  }
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas en la parte superior */
+    grid-template-rows: repeat(2, 1fr); /* 2 filas en la parte superior */
+    gap: 10px; /* Espacio entre los elementos de la cuadrícula */
+  }
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en la parte superior */
+    grid-template-rows: repeat(3, 1fr); /* 2 filas en la parte superior */
+    gap: 10px; /* Espacio entre los elementos de la cuadrícula */
+    
+  }
+  .grid-item {
+    padding: 10px;
+    border: 1px solid #800080;
+    text-align: center;
+    height: 70%;
+    border-radius: 15px;
+    overflow:hidden;
+  }
+  .grid-item2 {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #800080;
+    text-align: center;
+    height: 70%;
+    border-radius: 15px;
+    overflow:hidden;
+  }
+  .grid-item {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #800080;
+    text-align: center;
+    height: 70%;
+    border-radius: 15px;
+    overflow:hidden;
+  }
+  .grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*2 columnas*/
+    grid-template-rows: repeat(2, 1fr); /*2 filas*/
+    gap: 10px;
+  }
+  
+  .grid-item3 {
+    padding: 10px;
+    /*border: 3px solid #7fbe63;*/
+    text-align: center;
+    height: 70%;
+    overflow:hidden;
+  }
+
+   .grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*2 columnas*/
+    grid-template-rows: repeat(2, 1fr); /*2 filas*/
+    gap: 10px;
+  }
+  
+  .grid-item3 {
+    padding: 10px;
+    /*border: 3px solid #7fbe63;*/
+    text-align: center;
+    height: 70%;
+    overflow:hidden;
+  }
+  .grid-item img, .grid-item2 img, .grid-item3 img img, .grid-container4 img{  
+    height: 70%;
+    width: 70%;
+  } 
+
+@media (min-width: 1200px) {
+    #nosotros{
+        background-position-x: calc(100vw - 800px);
+    }
+}

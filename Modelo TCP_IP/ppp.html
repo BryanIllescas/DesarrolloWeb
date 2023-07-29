@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPP</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa1.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_ppp">
+        <h1>Capa 1 <br>Protocolo PPP</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">PPP</samp></h2>
+        <p>
+          El Protocolo Punto a Punto (PPP) es un protocolo de red utilizado para establecer una conexión directa entre dos nodos o dispositivos.
+          Es comúnmente utilizado para establecer conexiones entre un cliente y un servidor a través de una línea telefónica, línea serial, conexión DSL o cualquier otro medio de comunicación.
+          PPP es parte del conjunto de protocolos del modelo TCP/IP y se utiliza para establecer y configurar la conexión de capa de enlace de datos entre los dispositivos.
+        </p>
+        <p>
+          PPP es un protocolo eficiente y versátil que admite diversas funciones, como la asignación dinámica de direcciones IP mediante el protocolo IPCP (Protocolo de Configuración de IP), la autenticación de usuarios mediante PAP (Protocolo de Autenticación de Contraseña) o CHAP (Protocolo de Autenticación de Desafío de Reto) y la compresión de datos.
+          Además, PPP también puede encapsular otros protocolos de capa de red, lo que le permite transportar datos de diferentes protocolos a través de la misma conexión punto a punto.
+        </p>
+        
+        <h3>Funcionamiento de PPP</h3>
+        <p>
+          PPP opera en la capa de enlace de datos del modelo OSI y consta de dos extremos: el equipo remoto (llamado "cliente") y el equipo central (llamado "servidor").
+          El proceso de establecimiento de la conexión PPP generalmente implica la negociación de parámetros de configuración entre el cliente y el servidor, como el tipo de autenticación y la dirección IP asignada.
+          Una vez que se ha establecido la conexión, PPP puede transportar paquetes de datos entre los dos extremos, encapsulando los paquetes de capa de red en tramas PPP para su transmisión y desencapsulación en el extremo receptor.
+        </p>
+        
+        <h3>Usos de PPP</h3>
+        <p>
+          PPP ha sido ampliamente utilizado para brindar conectividad a Internet a través de conexiones de marcado telefónico.
+          Antes de la popularización de tecnologías como DSL y cable, las conexiones de banda estrecha, como las líneas telefónicas, eran comunes para conectarse a proveedores de servicios de Internet (ISP).
+          PPP también se utiliza en redes de área local (LAN) para establecer conexiones punto a punto entre dispositivos, como enlaces seriales entre enrutadores.
+          Además, PPP ha sido adaptado y utilizado en diversas tecnologías de acceso, como PPPoE (PPP sobre Ethernet) para conexiones DSL y PPPoA (PPP sobre ATM) para conexiones sobre redes de telefonía móvil.
+        </p>
+      </div>
+      
+      <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

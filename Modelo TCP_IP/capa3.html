@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capa3</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="#inicio">Informacion de capa</a>
+                <a href="#nosotros">Sobre nosotros</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero3">
+        <h1>EL MODELO TCP/IP <br>Capa 3 <br>Transporte</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Capa de Transporte <samp class="color-acento">(Transport Layer)</samp></h2>
+            <h3>¿Qué es?</h3>
+            <p>
+                La capa de Transporte proporciona servicios de transporte de extremo a extremo para los datos. 
+                Es responsable de dividir los datos en segmentos más pequeños y garantizar una comunicación confiable 
+                o no confiable, según el protocolo utilizado (TCP o UDP). 
+            </p>
+            <h3>¿Cómo funciona y cuál es su función?</h3>
+            <p>
+                La capa de Transporte toma los datos de la capa de Aplicación y los divide en segmentos para su transmisión. 
+                Utiliza números de puerto para identificar los diferentes procesos de las aplicaciones en los hosts. 
+                Además, ofrece servicios de entrega confiable y orientada a la conexión (TCP) o no confiable y sin conexión (UDP).
+            </p>
+            <h3>¿Cuál es su importancia?</h3>
+            <p>
+                La capa de Transporte es crucial para garantizar que los datos se entreguen correctamente entre aplicaciones en los hosts. 
+                TCP proporciona mecanismos de control de flujo, corrección de errores y retransmisión para asegurar que todos los datos 
+                se entreguen en el orden correcto, mientras que UDP es más ligero y adecuado para aplicaciones que pueden tolerar cierta pérdida de datos.
+            </p>
+            <h3>Ejemplo</h3>
+            <p>
+                Ejemplos de protocolos en la capa de Transporte son TCP, utilizado para transferencia de archivos, 
+                navegación web, etc., y UDP, utilizado en aplicaciones de transmisión en tiempo real, juegos en línea y servicios de streaming de video.
+            </p>
+            <p><h3>¿Qué protocolos utiliza esta capa?</h3></p>
+            <div class="grid-container2" style="margin: 20px;">
+                <div class="grid-item2" ><b> TCP (Trasmition control protocol): </b> El TCP describe los servicios que segmentan o dividen el flujo de datos. 
+                   <a href="tcp.html">
+                    <img src="imagenes/tcp.png" alt="Botón HTTP" class=" http";>
+                    </a>
+                  </div>
+                <div class="grid-item2"><b> UDP (User Datagram Protocol): </b> Permite el envió de datagramas a través de la red sin necesidad de una conexión.
+                  <a href="udp.html">
+                    <img src="imagenes/udp.png" alt="Botón HTTP" class=" http";>
+                    </a>
+                   </div>
+            
+              </div>
+        </div>
+     </section>
+
+     <section id="nosotros">
+        <div class="container">
+            <h3>Somos el Grupo número 4 <br>del curso Redes 1</h3>
+            <li>Bryan Alexander ILlescas Monroy <br>9989-20-273</li>
+            <li>Byron Iván Barrientos Hernández <br>9989-20-3407</li></div>
+     </section>
+
+     <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

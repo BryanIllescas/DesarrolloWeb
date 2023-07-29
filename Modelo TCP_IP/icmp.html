@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICMP</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa2.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_icmp">
+        <h1>Capa 2 <br>Protocolo ICMP</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">ICMP</samp></h2>
+            <p>
+                ICMP es un protocolo utilizado para enviar mensajes de control y notificaciones de error en una red IP. 
+                Se utiliza para comunicar mensajes de estado, problemas y errores entre dispositivos en la red. 
+                Por ejemplo, cuando un paquete de datos no puede ser entregado a su destino, se puede generar un mensaje ICMP 
+                para notificar al emisor sobre el problema.
+            </p>
+                   
+            <h3>Funcionamiento del ICMP</h3>
+            <p>
+                Supongamos que intentas acceder a un sitio web, pero el servidor que aloja el sitio está fuera de línea. 
+                Cuando tu solicitud no puede ser entregada al servidor, tu dispositivo podría recibir un mensaje 
+                ICMP de "host inalcanzable" o "tiempo de espera agotado". Estos mensajes ICMP le informan a tu dispositivo 
+                que el servidor no está disponible, y podrías recibir un mensaje de error en tu navegador diciendo que 
+                la página no se puede cargar.
+            </p>
+            
+            <h3>Importancia del ICMP</h3>
+            <p>
+                ICMP es esencial para la gestión y solución de problemas en las redes IP. Su importancia radica en 
+                su capacidad para proporcionar información sobre el estado de la red y notificar errores.
+            </p>
+            <h4>Gestión de errores</h4>
+            <p>
+                ICMP se utiliza para enviar mensajes de error cuando ocurren problemas en la red, como destinos inalcanzables, 
+                tiempo de espera agotado o congestionamiento de la red. Estos mensajes son fundamentales para que los dispositivos 
+                identifiquen problemas y tomen medidas correctivas.
+            </p>
+            <h4>Solución de problemas de red</h4>
+            <p>
+                Los mensajes ICMP también son útiles para diagnosticar y solucionar problemas de conectividad en la red. 
+                Proporcionan información sobre la causa de la falla y permiten a los administradores de red tomar las medidas 
+                adecuadas para resolver los problemas.
+            </p>
+          </div>
+
+        <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

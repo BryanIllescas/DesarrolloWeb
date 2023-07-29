@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capa1</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="#inicio">Informacion de capa</a>
+                <a href="#nosotros">Sobre nosotros</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero1">
+        <h1>EL MODELO TCP/IP <br>Capa 1 <br>Acceso a la Red</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Capa de Acceso a la Red <samp class="color-acento">(Network Access Layer)</samp></h2>
+            <h3>¿Qué es?</h3>
+            <p>
+                La capa de Acceso a la Red, también conocida como capa física o de enlace, 
+                es la capa más baja del modelo TCP/IP. Se encarga de la transmisión física de 
+                datos entre dispositivos dentro de una red local. En esta capa, se definen 
+                los detalles específicos del hardware y los protocolos de acceso a la red, como Ethernet, Wi-Fi, PPP, etc. 
+            </p>
+            <h3>¿Cómo funciona y cuál es su función?</h3>
+            <p>
+                La función principal de la capa de Acceso a la Red es proporcionar una forma de transmitir datos 
+                a través del medio físico. Esta capa toma los paquetes de datos de la capa superior y los encapsula 
+                en tramas que contienen información de control, como direcciones MAC y otros detalles 
+                para el enrutamiento y la detección de errores. Además, se encarga de transmitir las tramas 
+                a través de cables, fibra óptica o conexiones inalámbricas.
+            </p>
+            <h3>¿Cuál es su importancia?</h3>
+            <p>
+                La capa de Acceso a la Red es fundamental porque establece la conexión física entre los dispositivos 
+                y garantiza que los datos puedan ser transmitidos de manera confiable a través del medio físico. 
+                Es la base para el funcionamiento de toda la red y permite la comunicación entre dispositivos dentro de una misma red local.
+            </p>
+            <h3>Ejemplo</h3>
+            <p>
+                Ejemplos de protocolos en la capa de Acceso a la Red son Ethernet (IEEE 802.3) para redes con cable, Wi-Fi (IEEE 802.11) 
+                para redes inalámbricas y PPP (Protocolo de Punto a Punto) para conexiones de acceso telefónico o DSL.
+            </p>
+          <p><h3>¿Qué protocolos utiliza está capa</h3></p>
+          <div class="grid-container4" style="margin: 20px;">
+            <div class="grid-item"><b>Ehernet: </b> Define los estándares para el cableado y las señales eléctricas que permiten la transmisión de datos entre dispositivos en la misma red. </li>
+              <a href="ethernet.html">
+               <img src="imagenes/ethernet.png" alt="Botón HTTP" class=" http";>
+               </a></div>
+            <div class="grid-item"><b>WIFI: </b>Permite la conexión inalámbrica de dispositivos a una red mediante el uso de señales de radio.</li>
+              <a href="WIFI.html">
+               <img src="imagenes/WIFI.png" alt="Botón HTTP" class=" http" ;>
+               </a></div>
+            <div class="grid-item"><b>PPP (Point-to-Point Protocol): </b> Proporciona un método para transmitir datos a través de una línea telefónica o una conexión serial.
+            </li>
+              <a href="ppp.html">
+               <img src="imagenes/ppp.jpg" alt="Botón HTTP" class=" http" ;>
+               </a></div>
+            <div class="grid-item" ><b>HDLC (High-Level Data Link Control): </b> Se utiliza comúnmente en redes WAN y proporciona control de flujo y detección de errores.</li>
+              <a href="hdlc.html">
+               <img src="imagenes/hdlc.jpg" alt="Botón HTTP" class=" http" >
+               </a> </div>
+            <div class="grid-item"><b>SLIP (Serial Line Internet Protocol): </b> Es un protocolo de enlace de datos utilizado para transmitir paquetes de datos sobre conexiones seriales. </li>  
+              <a href="slip.html">
+               <img src="imagenes/slip.png" alt="Botón HTTP" class=" http"; >
+               </a> </div>
+               <div class="grid-item"><b>ARP (Address Resolution Protocol): </b> Está involucrado en la resolución de direcciones IP a direcciones MAC en una red local, lo que ayuda en la comunicación en la Capa de Acceso a la Red.
+               </li>  
+                <a href="arp.html">
+                 <img src="imagenes/ARP.jpg" alt="Botón HTTP" class=" http"; >
+                 </a> </div>
+            
+          </div>
+        </div>
+     </section>
+
+     <section id="nosotros">
+        <div class="container">
+            <h3>Somos el Grupo número 4 <br>del curso Redes 1</h3>
+            <li>Bryan Alexander ILlescas Monroy <br>9989-20-273</li>
+            <li>Byron Iván Barrientos Hernández <br>9989-20-3407</li></div>
+     </section>
+
+     <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

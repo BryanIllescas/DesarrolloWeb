@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCP</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa3.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_tcp">
+        <h1>Capa 3 <br>Protocolo TCP</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">TCP</samp></h2>
+            <p>
+                TCP (Protocolo de Control de Transmisión) es uno de los principales protocolos de la capa de transporte del modelo TCP/IP.
+                Es un protocolo orientado a conexión que garantiza la entrega confiable y ordenada de datos entre dos dispositivos en una red.
+                TCP divide los datos en paquetes y los reensambla en el destino para asegurar que lleguen sin errores y en el orden correcto. 
+              </p>
+              <p>Este también proporciona un transporte confiable para evitar errores por medio del ACK (Acknowledgement) y en la parte de envió retrasmitiendo los paquetes perdidos el software 
+                 divide el flujo de datos en pequeños fragmentos llamados segmentos la cual tiene una dirección de destino a la siguiente capa de transmisión, acepta datos desde varios programas 
+                 de usuario y los envía a la siguiente capa para hacer esto se añade información adicional a cada paquete,  y códigos que identifican que programa envía o recibe y su respectiva 
+                 verificacion de que el paquete llega intacto también llamado checksum.  </p>
+              <p>
+                TCP también incluye mecanismos para manejar la congestión de la red y ajustar la velocidad de transmisión según las condiciones de la red.
+                Esto permite que TCP sea muy efectivo en redes con alta carga de tráfico y cambios en la calidad de la conexión.
+                Además, TCP establece una conexión de tres vías (three-way handshake) antes de la transmisión de datos para garantizar que ambos extremos estén listos para la comunicación.
+              </p>
+              
+              <h3>Funcionamiento de TCP</h3>
+              <p>
+                Cuando dos dispositivos desean comunicarse mediante TCP, primero establecen una conexión mediante el three-way handshake.
+                Luego, los datos se dividen en paquetes y se transmiten a través de la red.
+                En el destino, TCP reensambla los paquetes en el orden correcto y verifica que no haya errores en la transmisión utilizando números de secuencia y de acuse de recibo.
+                Si un paquete se pierde o llega dañado, TCP solicita su retransmisión para garantizar la entrega confiable.
+              </p>
+              
+              <h3>Características de TCP</h3>
+              <p>
+                Algunas de las características clave de TCP incluyen:
+                <ul>
+                  <li>Confiabilidad: Garantiza que los datos lleguen sin errores y en el orden correcto.</li>
+                  <li>Orientado a conexión: Establece una conexión antes de la transmisión de datos.</li>
+                  <li>Control de flujo: Ajusta la velocidad de transmisión según las condiciones de la red.</li>
+                  <li>Control de congestión: Maneja la congestión de la red para evitar la pérdida de paquetes.</li>
+                </ul>
+              </p>
+            </div>
+
+        <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

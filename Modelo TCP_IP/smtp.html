@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMTP</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa4.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_smtp">
+        <h1>Capa 3 <br>Protocolo SMTP</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">SMTP</samp></h2>
+            <p>
+                SMTP es el Protocolo Simple de Transferencia de Correo, y es un protocolo utilizado para el envío de correos electrónicos entre servidores de correo.
+                Permite que los correos electrónicos sean enviados y recibidos a través de una red de manera eficiente y confiable.
+              </p>
+              <p>
+                Cuando un usuario envía un correo electrónico, el cliente de correo utiliza SMTP para enviar el correo electrónico al servidor de correo saliente.
+                El servidor de correo saliente luego retransmite el correo electrónico al servidor de correo del destinatario utilizando SMTP.
+                Finalmente, el servidor de correo del destinatario entrega el correo electrónico al cliente de correo del destinatario para su recepción.
+              </p>
+              
+              <h3>Funcionamiento de SMTP</h3>
+              <p>
+                SMTP opera en dos modos principales: el modo de comandos y el modo de transferencia de datos.
+                En el modo de comandos, el cliente envía comandos SMTP al servidor para indicar el origen y destino del correo electrónico, así como su contenido y otros detalles relevantes.
+                Una vez que se han enviado todos los comandos necesarios, el cliente inicia el modo de transferencia de datos para enviar el contenido del correo electrónico al servidor.
+                El servidor procesa el correo electrónico y lo retransmite al servidor del destinatario para su entrega final.
+              </p>
+              
+              <h3>Importancia de SMTP</h3>
+              <p>
+                SMTP es esencial para el funcionamiento del correo electrónico en Internet y redes locales.
+                Permite que los correos electrónicos sean enviados y recibidos de manera rápida y confiable, y ha sido una parte fundamental de las comunicaciones digitales durante décadas.
+              </p>
+            </div>
+
+        <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

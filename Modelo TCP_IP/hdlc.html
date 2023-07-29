@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDLC</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa1.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_hdlc">
+        <h1>Capa 1 <br>Protocolo HDLC</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">HDLC</samp></h2>
+            <p>
+                HDLC (Protocolo de Enlace de Datos de Alto Nivel) es un protocolo de comunicación de datos de la capa de enlace de datos.
+                Fue desarrollado por IBM en la década de 1970 y se ha convertido en un protocolo ampliamente utilizado en redes de área amplia (WAN) y redes de área local (LAN).
+                HDLC opera en el nivel de enlace del modelo TCP/IP y es compatible con varias topologías de red, incluyendo punto a punto y multidifusión.
+              </p>
+              <p>
+                HDLC es un protocolo síncrono que utiliza tramas para el transporte de datos.
+                Cada trama HDLC contiene información de control, datos y verificación de errores, lo que garantiza una transmisión confiable de datos entre los dispositivos conectados.
+                El protocolo utiliza mecanismos de confirmación y retransmisión para asegurar que las tramas lleguen a su destino de manera intacta.
+              </p>
+              
+              <h3>Funcionamiento de HDLC</h3>
+              <p>
+                En HDLC, un dispositivo actúa como el "punto de inicio" del enlace de datos (conocido como el "punto de referencia") y otro dispositivo actúa como el "punto final" (conocido como el "punto de terminación").
+                La comunicación entre estos puntos puede ser full dúplex o half dúplex, lo que permite el envío y recepción simultáneos o alternados de datos.
+                HDLC utiliza una trama especial llamada "trama de inicio" para establecer la conexión y luego transmite datos en tramas sucesivas hasta que se completa la transmisión.
+                Una vez que se ha transferido toda la información, se utiliza una "trama de fin" para finalizar la conexión.
+              </p>
+              
+              <h3>Usos de HDLC</h3>
+              <p>
+                HDLC ha sido ampliamente utilizado en redes de telecomunicaciones y WAN.
+                Es el protocolo predeterminado utilizado en líneas de enlace dedicadas, como T1 y E1.
+                Además, HDLC ha sido adoptado en redes de área local y tecnologías de acceso, como Frame Relay y PPP (Protocolo Punto a Punto).
+                En estos casos, HDLC se utiliza como el protocolo de enlace de datos para la transmisión de datos entre dispositivos y como un protocolo de encapsulación para transportar paquetes de capa de red.
+              </p>
+            </div>
+
+        <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>

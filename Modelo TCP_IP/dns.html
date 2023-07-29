@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Modelo TCP/IP</p>
+            <nav>
+                <a href="capa4.html">Volver</a>
+                <a href="#inicio">Informacion</a>
+            </nav>
+        </div>
+     </header>
+
+     <section id="hero_dns">
+        <h1>Capa 3 <br>Protocolo DNS</h1>
+     </section>
+     <section id="inicio">
+        <div class="container">
+            <div class="img_conteiner"></div>
+            <h2>Protocolo <samp class="color-acento">DNS</samp></h2>
+            <p>
+                El DNS (Domain Name System) es un sistema de nomenclatura jerárquico que se utiliza para traducir nombres de dominio (por ejemplo, www.ejemplo.com) en direcciones IP (por ejemplo, 192.168.0.1).
+                Esto permite que los usuarios puedan acceder a sitios web y otros recursos en Internet utilizando nombres de dominio en lugar de tener que recordar direcciones IP numéricas.
+              </p>
+              <p>
+                Cuando un usuario ingresa una dirección URL en el navegador, el DNS se encarga de buscar la dirección IP correspondiente al nombre de dominio asociado. Esto se hace a través de una serie de consultas y respuestas realizadas entre servidores DNS.
+              </p>
+                     
+              <h3>Funcionamiento del DNS</h3>
+              <p>
+                El DNS funciona como una gran base de datos distribuida en todo el mundo. Cuando un usuario ingresa un nombre de dominio en el navegador, el cliente DNS en el dispositivo del usuario envía una consulta a un servidor DNS local.
+                Si el servidor local no tiene la información de ese nombre de dominio en su caché, envía una consulta a un servidor DNS raíz, que a su vez remite la consulta a servidores DNS autoritativos para la zona del dominio en cuestión.
+                Finalmente, el servidor DNS autoritativo responde con la dirección IP asociada al nombre de dominio, y esa información se almacena en la caché del servidor local para futuras consultas.
+              </p>
+              
+              <h3>Importancia del DNS en Internet</h3>
+              <p>
+                El DNS es una parte fundamental de Internet, ya que permite la resolución de nombres de dominio y la traducción de nombres legibles por humanos en direcciones IP que las computadoras puedan entender y comunicarse entre sí.
+                Sin el DNS, los usuarios tendrían que memorizar direcciones IP numéricas para acceder a sitios web y recursos en Internet, lo que sería poco práctico y difícil de manejar.
+              </p>
+            </div>
+
+        <footer>
+        <div class="container">
+            <p>&copy; Grupo 4 Redes 1 UMG 2023</p>
+        </div>
+     </footer>
+</body>
+</html>
